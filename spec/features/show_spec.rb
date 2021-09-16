@@ -24,6 +24,11 @@ RSpec.describe 'Show Page' do
       within('section.chef-name') do
         expect(page).to have_content("Chef: #{@chef.name}")
       end
+
+      within('section.ingredient') do
+        expect(page).to have_content("Ingredient: #{@ingredient.name}")
+      end
+
     end
   end
 end
