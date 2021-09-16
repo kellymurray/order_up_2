@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-@chef = Chef.create(name: 'Cat Cora')
-@chef = Chef.create(name: 'Bobby Flay')
+@chef1 = Chef.create(name: 'Cat Cora')
+@chef2 = Chef.create(name: 'Bobby Flay')
 @dish1 = @chef.dishes.create(name: 'Taco', description: 'Corn Sandwich')
 @dish2 = @chef.dishes.create(name: 'Soup', description: 'Broth')
 @ingredient1 = Ingredient.create(name: 'Chicken', calories: 200)
